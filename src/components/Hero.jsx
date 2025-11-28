@@ -1,11 +1,16 @@
 import React from 'react';
+import { assets } from '../assets/assets';
 
 const Hero = () => {
   return (
-    <section id="home" className=" bg-[url('sec1_bg.jpg')] bg-center bg-cover min-h-screen py-15 pt-30 flex items-center justify-center  section-padding">
-      <div className="container mx-auto px-6 ">
+    <section id="home" className=' min-h-screen  flex items-center justify-center  section-padding'>
+      
+      <div className="absolute inset-0 z-0">
+      <img src={assets.sec1_img} alt="hero_image" className='w-full h-full object-cover '/>
+      </div>
+      <div className="container z-2 pt-22 mx-auto px-6 ">
         <div className="max-w-7xl mx-auto text-white flex flex-col items-end">
-          <div className="w-32 h-32 mb-8 rounded-full bg-gradient-to-r from-primary to-black flex items-center justify-center text-white text-4xl font-bold">
+          <div className="w-30 h-30 mb-2 rounded-full bg-gradient-to-r from-primary to-black flex items-center justify-center text-white text-4xl font-bold">
             RTK
           </div>
           
@@ -31,7 +36,7 @@ const Hero = () => {
             </a>
           </div>
           
-          <div className="mt-16 animate-bounce">
+          <div className="mt-10 animate-bounce">
             <a href="#about" className="text-gray-200 hover:text-primary transition-colors">
               <svg className="w-12 h-12 p-2 rounded-full mx-auto border" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -40,6 +45,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
