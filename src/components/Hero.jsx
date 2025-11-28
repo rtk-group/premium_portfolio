@@ -3,12 +3,23 @@ import { assets } from '../assets/assets';
 
 const Hero = () => {
   return (
-    <section id="home" className=' min-h-screen  flex items-center justify-center  section-padding'>
+    // <section id="home" className={`min-h-screen bg-[url(${assets.sec1_img})] flex items-center justify-center section-padding`}>
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${assets.sec1_img})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 border border-2 border z-0 min-h-full">
       <img src={assets.sec1_img} alt="hero_image" className='w-full h-full object-cover '/>
-      </div>
-      <div className="container z-2 pt-22 mx-auto px-6 ">
+      </div> */}
+
+      <div className="container z-2 mx-auto px-6 h-full">
         <div className="max-w-7xl mx-auto text-white flex flex-col items-end">
           <div className="w-30 h-30 mb-2 rounded-full bg-gradient-to-r from-primary to-black flex items-center justify-center text-white text-4xl font-bold">
             RTK
