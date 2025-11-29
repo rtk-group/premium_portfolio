@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 
+import { assets } from '../assets/assets';
+
 
 
 
@@ -46,7 +48,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Phone',
-      value: '+91 (969) 010-3443',
+      value: '+91 9690103443',
       link: 'tel:+919690103443'
     },
     {
@@ -63,8 +65,13 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-[url('sec4_bg.jpg')] text-white bg-center bg-cover py-20">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="section-padding text-white py-20" style={{
+                backgroundImage: `url(${assets.sec3_img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+      <div className="container mx-auto px-3">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-16"></div>
@@ -98,9 +105,9 @@ const Contact = () => {
               
               {/* Social Links */}
               <div className="mt-6 flex space-x-4">
-                {[{icon: <FaGithub />, link:'https://github.com/rtk-group'}, {icon: <FaLinkedin />, link:'https://www.linkedin.com/in/rohit-kumar-9ba48a316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}, {icon: <FaTwitterSquare />, link:'#'}].map((platform) => (
+                {[{icon: <FaGithub />, link:'https://github.com/rtk-group'}, {icon: <FaLinkedin />, link:'https://www.linkedin.com/in/rohit-kumar-9ba48a316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}, {icon: <FaTwitterSquare />, link:'#'}].map((platform,index) => (
                   <a
-                    key={platform}
+                    key={index}
                     href={platform.link}
                     className="border rounded-xl shadow-sm flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-md transition-all"
                   >
@@ -111,7 +118,7 @@ const Contact = () => {
             </div>
             
             {/* Contact Form */}
-            <div className="p-4">
+            <div className="py-4">
               <form onSubmit={handleSubmit} className="space-y-3">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-white mb-2">

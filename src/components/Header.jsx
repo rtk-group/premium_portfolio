@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { assets } from '../assets/assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold text-secondary">
-            <img src={'/logo1.jpg'} className='w-35' alt="logo of rtk_group" />
+            <img src={assets.logo1} className='w-35' alt="logo of rtk_group" />
           </a>
 
           {/* Desktop Menu */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { assets } from '../assets/assets';
 
 const Skills = () => {
   const skills = [
@@ -15,8 +16,13 @@ const Skills = () => {
   const categories = [...new Set(skills.map(skill => skill.category))];
 
   return (
-    <section id="skills" className=" bg-[url('sec2_bg.jpg')] bg-center bg-cover section-padding py-15 ">
-      <div className="container mx-auto px-6">
+    <section id="skills"  className="section-padding py-15 " style={{
+            backgroundImage: `url(${assets.sec2_img})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}>
+      <div className="container mx-auto px-3">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-4">Skills & Technologies</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-16"></div>

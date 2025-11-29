@@ -4,9 +4,9 @@ import { assets } from '../assets/assets';
 const Hero = () => {
   return (
     // <section id="home" className={`min-h-screen bg-[url(${assets.sec1_img})] flex items-center justify-center section-padding`}>
-    <section 
-      id="home" 
-      className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden"
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center section-padding py-15 pt-25 relative overflow-hidden"
       style={{
         backgroundImage: `url(${assets.sec1_img})`,
         backgroundSize: 'cover',
@@ -14,7 +14,7 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      
+
       {/* <div className="absolute inset-0 border border-2 border z-0 min-h-full">
       <img src={assets.sec1_img} alt="hero_image" className='w-full h-full object-cover '/>
       </div> */}
@@ -24,20 +24,20 @@ const Hero = () => {
           <div className="w-30 h-30 mb-2 rounded-full bg-gradient-to-r from-primary to-black flex items-center justify-center text-white text-4xl font-bold">
             RTK
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold text-secondary mb-6">
             Rohit <span className="text-primary">Kumar</span>
           </h1>
-          
-          <h2 className="text-2xl md:text-3xl mb-8 text-center">
+
+          <h2 className="text-2xl md:text-3xl mb-5 text-center">
             Full Stack Developer & UI/UX Enthusiast
           </h2>
-          
+
           <p className="text-xl mb-12 max-w-2xl text-center leading-relaxed">
-            I create beautiful, functional, and user-friendly web applications 
+            I create beautiful, functional, and user-friendly web applications
             that solve real-world problems and deliver exceptional user experiences.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
             <a href="#projects" className="btn-primary">
               View My Work
@@ -46,7 +46,7 @@ const Hero = () => {
               Get In Touch
             </a>
           </div>
-          
+
           <div className="mt-10 animate-bounce">
             <a href="#about" className="text-gray-200 hover:text-primary transition-colors">
               <svg className="w-12 h-12 p-2 rounded-full mx-auto border" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
     </section>
   );
 };

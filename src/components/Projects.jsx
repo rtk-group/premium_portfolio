@@ -1,4 +1,5 @@
 import React from 'react';
+import { assets } from '../assets/assets';
 
 const Projects = () => {
   const projects = [
@@ -6,7 +7,7 @@ const Projects = () => {
       id: 1,
       title: 'E-Commerce Platform',
       description: 'Developed a full-stack e-commerce platform using the MERN stack (MongoDB, Express.js, React, Node.js) with JWT authentication and Stripe/COD integration for secure payments. and also admin dashboard',
-      image: '/ecommerce.jpg',
+      image: `${assets.eComm_img}`,
       technologies: ['React', 'Express', 'Node.js', 'MongoDB', 'Stripe'],
       github: 'https://github.com/rtk-group/e-commerce',
       live: 'https://e-commerce-rxwe.onrender.com',
@@ -16,7 +17,7 @@ const Projects = () => {
       id: 2,
       title: 'Donation App',
       description: 'Developed a full-stack donation platform using Next.js integrated with Razorpay for secure online payments. The app enables users to easily contribute to charitable causes through a seamless and responsive interface. Deployed live',
-      image: '/donate.jpg',
+      image: `${assets.donate_img}`,
       technologies: ['Next.js', 'RazorPay', 'Tailwind CSS'],
       github: '#',
       live: '#',
@@ -25,9 +26,9 @@ const Projects = () => {
     {
       id: 3,
       title: 'Tailor Shop Online Store',
-      description: 'Develop an immersive React-based portfolio that translates a graphic designer s unique brand into a digital experience. The single-page application (SPA) features an intuitive navigation and interactive project galleries, allowing the artwork to captivate and engage potential clients directly.',
-      image: '/online_store.jpg',
-      technologies: ['JavaScript', 'API Integration', 'Chart.js'],
+      description: 'Develop an immersive React-based portfolio that translates a graphic designer s unique brand into a digital experience. The single-page application, allowing the artwork to captivate and engage potential clients directly.',
+      image: `${assets.graphic_img}`,
+      technologies: ['React.js', 'Tailwind CSS', 'JavaScript'],
       github: '#',
       live: '#',
       featured: false
